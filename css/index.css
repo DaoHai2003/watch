@@ -5,9 +5,6 @@
 }
 /* header */
 
-body {
-    padding: 0px 10px;
-}
 
 .container {
     max-width: 1300px;
@@ -986,6 +983,16 @@ i.fa.fa-bars {
       .ag-format-container{
         display: none;
       }
+      .banner { 
+        height: 200px;
+    }
+    body {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .logo{
+        margin-left: 10px;
+    }
     }
     
 
