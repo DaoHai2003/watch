@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+
+body {
+    padding: 0px 10px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.header-top{
+    background-color: lightgray;
+    width: 100%;
+}
+.header-top p{
+    text-align: center;
+    color: gray;
+    padding: 5px;
+}
+.header-logo .container .desktop-search {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+/* search mobile */
+.header-logo .container .search-input-mobile {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .container .search-input-mobile input {
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+/* end search mobile */
+
+.header-logo .container .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-logo .container .search {
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.header-logo .container .search .search-input {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .container .search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.sign-in-item {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.item_1,
+.item_2,
+.item_3 {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+
+/* menu */
+
+.desktop-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+i.fa.fa-bars {
+    font-size: 20px;
+}
+.bottom_sale{
+    width: 100%;
+}
+
+
+.desktop-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  
+}
+
+.desktop-menu li {
+    position: relative;
+}
+
+.desktop-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333; 
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.desktop-menu li:hover a {
+    color: gray; 
+}
+
+.desktop-menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0; 
+    width: 0; 
+    height: 3px; 
+    background-color: gray; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.desktop-menu li:hover a::after {
+    width: 100%; 
+}
+
+/* menu */
+
+
+/* end header */
+/* body */
+.borderselect{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 6px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.title_1{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-top: 20px;
+}
+.khuvuc{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hinh_1{
+    margin-right: 30px;
+}
+.hinh_1 img{
+    border-radius: 20px;
+}
+.mau_chu{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    line-height: 50px;
+}
+.cuahang_1{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 10px;
+    margin: auto;
+}
+
+/************************** body ***********************/
+
+/* footer */
+.footer {
+    background-color: rgb(59, 59, 59);
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer .container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(59, 59, 59);
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-top: 50px;
+}
+
+.ft_2_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    width: 70%;
+}
+
+.tongdai {
+    transform: rotate(-7deg);
+}
+
+.footer ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cr {
+    display: flex;
+    justify-content: center;
+}
+
+.cr_1,
+.cr_2,
+.cr_3 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.cr_1 {
+    border: none;
+    background-color: #6c6d70;
+    color: white;
+}
+
+.cr_2 {
+    color: white;
+    background-color: gray;
+}
+
+.cr_3 {
+    color: white;
+    background-color: gray;
+}
+
+.ft_1 {
+    width: 30%;
+}
+
+.ft_2,
+.ft_3,
+.ft_4,
+.ft_5 {
+    width: 30%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.footer_2{
+    display: none;
+  }
+/************* reponsive *****************/
+
+
+/* ẩn của mobile */
+
+
+@media (min-width: 1030px) {
+    .s-mobile {
+        display: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .table_ut_tt_mobile{
+        display: none;
+    }
+}
+
+
+/* ẩn của mobile */
+
+
+/* ẩn của desktop */
+
+@media (max-width: 1030px) {
+    
+    .container .banner {
+        height: 214px;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .hr_desktop_menu {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .header-logo .container .desktop-search {
+        display: grid;
+        grid-template-columns: 3% 47% 50%;
+    }
+    hr {
+        margin-bottom: 0;
+    }
+    
+    .product_list_grid{
+        display: grid;
+        gap: 20px 50px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 20px;
+
+    }
+    .card_end{
+        display: none;
+    }
+    .table_ut_tt_mobile hr{
+        margin-bottom: 20px;
+    } 
+    .table_ut_tt{
+        display: none;
+    }
+    /* mobile pr_list */
+    .filter_list{
+        display: none;
+    }
+    .filter_sanpham_grid{
+        display: none;
+    }
+    .sanpham_nam{
+        width: 100%;
+    }
+    .ft_mb{
+        display: block;
+    }
+    .sanpham_nam .filter_mb_price{
+        display: none;
+    }
+    /* end mobile pr_list */
+
+     /* Footer */
+
+     footer{
+        font-size: 5px;
+        display: none;
+      }
+      .footer_2{
+        background-color: black;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+      .tongdai {
+        display: flex;
+        color: white;
+        width: 100%;
+        transform: rotate(-5deg);
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* hệ thống shop */
+      .hethongshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .hethongshop .icon_arrow_1{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_2{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_hethongshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      li{
+        list-style: none;
+      }
+    
+      /* thông tin shop */
+      .thongtinshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .thongtinshop .icon_arrow_3{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_4{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_thongtinshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      .lienheshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .lienheshop .icon_arrow_5{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_6{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_lienheshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      /* info shop */
+      .info_shop{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        line-height: 40px;
+      }
+    
+
+}
+@media (max-width: 767px) {
+    .product_list_grid{
+        display: grid;
+        gap: 20px 50px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 20px;
+        font-size: clamp(10px, 8vw, 15px);
+      
+    }
+    .card_end{
+        display: block;
+    }
+    .thuong_hieu {
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: space-between;
+    }
+    .sale_sanpham {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(10px, 1fr));
+    }
+    
+    .sale_sanpham .sale_sanpham_item {
+        width: 100%;
+        
+    }
+
+    .sale_sanpham_item12 img {
+        width: 100%;
+    }
+    .sale_sanpham_item1 {
+        padding-right: 10px;
+    }
+    .sale_sanpham_item2 {
+        padding-left: 10px;
+    }
+    .sale_sanpham_item {
+        padding-top: 20px;
+    }
+    .Tintuc .Tintuc_grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,100%));
+        justify-content: space-between;
+     }
+    .Tintuc .Tintuc_grid .grid_3_none{
+        display: none;
+    }
+    .Featured_grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .Featured_grid img{
+        display: none;
+    }
+    .Featured_grid button{
+        width: 100%;
+        background-color: #4d585e;
+        font-size: 17px;
+        color: white;
+    }
+
+     /* Footer */
+
+     footer{
+        font-size: 5px;
+        display: none;
+      }
+      .footer_2{
+        background-color: black;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+      .tongdai {
+        display: flex;
+        color: white;
+        width: 100%;
+        transform: rotate(-5deg);
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* hệ thống shop */
+      .hethongshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .hethongshop .icon_arrow_1{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_2{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_hethongshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      li{
+        list-style: none;
+      }
+    
+      /* thông tin shop */
+      .thongtinshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .thongtinshop .icon_arrow_3{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_4{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_thongtinshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      .lienheshop{
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .lienheshop .icon_arrow_5{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .icon_arrow_6{
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-top: -5px;
+        padding: 5px;
+      }
+      .list_lienheshop{
+        color: white;
+        padding: 10px;
+        line-height: 40px;
+      }
+      /* info shop */
+      .info_shop{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        line-height: 40px;
+      }
+    }
+    
+
+
+
+/* ẩn của desktop */
+/* hover button */
+
+/* end hover button */
+
+/************* end reponsive *****************/
