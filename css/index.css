@@ -983,6 +983,9 @@ i.fa.fa-bars {
         padding: 10px;
         line-height: 40px;
       }
+      .ag-format-container{
+        display: none;
+      }
     }
     
 
