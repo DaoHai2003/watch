@@ -82,3 +82,16 @@ $(document).ready(function(){
         $(".list_lienheshop").slideUp();
     })
 })
+
+
+// xóa wow
+
+$(document).ready(function () { 
+    function removeWowOnMobile() {
+        if ($(window).width() <= 768) { 
+            $('.wow').removeClass('wow animate__animated animate__fadeInDown animate__fadeInUp ');
+        }
+    }
+    removeWowOnMobile();
+  
+});

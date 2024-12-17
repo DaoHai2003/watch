@@ -689,6 +689,10 @@ a{
         padding: 10px;
         line-height: 40px;
       }
+      .wow{
+        display: none;
+      }
+      
     }
     
 

@@ -426,6 +426,7 @@ i.fa.fa-bars {
 .pr_list_card_img{
     position: relative;
     transition: 0.5s;
+    
 }
 .pr_img_default{
     position: relative;
@@ -1031,5 +1032,40 @@ i.fa.fa-bars {
 }
 /* end hover button */
 /* ẩn của desktop */
-
+/* tư vấn */
+.btn_mess_user{
+    background-color: brown;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    right: 80px;
+    position: fixed;
+    bottom: 60px;
+    z-index: 10;
+}
+.form_mess_user{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 10;
+   
+}
+.form_mess_user_1{
+    height: 300px;
+    width: 800px;
+    border-radius: 100%;
+    transform: translateX(-30%);
+    margin-top: -60px;
+    z-index: 9;
+    box-shadow: rgba(17, 12, 46, 0.067) 0px 48px 100px 0px;}
+/* tư vấn */
 /************* end reponsive *****************/
