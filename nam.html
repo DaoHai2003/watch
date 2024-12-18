@@ -29,9 +29,16 @@
                     </div>
                     <!-- end mobile -->
                          <!-- menu_push -->
-                    <div class="menu_push">
-                        
-                    </div>
+                         <div class="menu_push">
+                            <div class="trangchu"><a href="./index.html">TRANG CHỦ</a></div>
+                            <div class="nam"><a href="./nam.html">NAM</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./nU.html">NỮ</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./donghodoi.html">CẶP ĐÔI</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./phukien.html">PHỤ KIỆN</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./trangsuc.html">TRANG SỨC</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./lienhe.html">LIÊN HỆ</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                            <div class="nam"><a href="./tintuc.html">TIN TỨC</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
+                        </div>
                     <div class="menu_overlay"></div>
                     <!-- menu_push -->
                     <!--  -->
@@ -128,7 +135,23 @@
                             <button class="price">Kích thước</button>
                         </div>
                        <div class="filter_block">
-                        
+                            <div class="grid_check">
+                                <div class="price_box" id="price_1  ">0 - 500k</div>
+                                <div class="price_box" id="price_2">500k - 1tr5</div>
+                                <div class="price_box" id="price_3">1tr5 - 2tr5</div>
+                                <div class="price_box" id="price_4">2tr5 - 5tr</div>
+                                <div class="price_box" id="price_5">5tr - 10tr</div>
+                                <div class="price_box" id="price_6">10tr+</div>
+                            </div>
+                            <div class="min_max">
+                                <div class="min_max_grid">
+                                    <input type="number" placeholder="min" id="min_1" min="0" oninput="validity.valid||(value='');"> 
+                                    <input type="number" placeholder="max" id="max_1">
+                                </div>
+
+                                    <span id="apply">Apply</span>
+                                
+                            </div>
                        </div>
                    </div>
                 <!-- end filter mobile  -->
@@ -161,7 +184,7 @@
                                     <div class="price_box" id="price_6">10tr+</div>
                                 </div>
                                 <div class="min_max">
-                                    <input type="number" placeholder="min" id="min_1" min="0" oninput="validity.valid||(value='');"> 
+                                    <input type="number" placeholder="min" id="min_1" oninput="validity.valid||(value='');"> 
                                     <span>-</span> <input type="number" placeholder="max" id="max_1"><span id="apply">Apply</span>
                                 </div>
                             </div>

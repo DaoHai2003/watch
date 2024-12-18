@@ -749,12 +749,132 @@ input[type="checkbox"]{
 
 
 /* ẩn của mobile */
+@media (max-width: 767px) {
+    .menu_push a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 15px;
+        line-height: 50px;
+    }
+    .nam{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .icon_push{
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        font-size: 20px;
+    }
+    .product_list_grid{
+        display: grid;
+        gap: 20px 50px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 20px;
+        font-size: clamp(10px, 8vw, 15px);
 
+    }
+    .card_end{
+        display: block;
+    }
+    .thuong_hieu {
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: space-between;
+    }
+    .sale_sanpham {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(10px, 1fr));
+    }
+    
+    .sale_sanpham .sale_sanpham_item {
+        width: 100%;
+        
+    }
+
+    .sale_sanpham_item12 img {
+        width: 100%;
+    }
+    .sale_sanpham_item1 {
+        padding-right: 10px;
+    }
+    .sale_sanpham_item2 {
+        padding-left: 10px;
+    }
+    .sale_sanpham_item {
+        padding-top: 20px;
+    }
+    .Tintuc .Tintuc_grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,100%));
+        justify-content: space-between;
+     }
+    .Tintuc .Tintuc_grid .grid_3_none{
+        display: none;
+    }
+    .Featured_grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .Featured_grid img{
+        display: none;
+    }
+    .Featured_grid button{
+        width: 100%;
+        background-color: #4d585e;
+        font-size: 17px;
+        color: white;
+    }
+    .list_thuong_hieu .list_2 .tab{
+        border: none;
+        width: 200px;
+        border-radius: 10px;
+    }
+}   
 
 /* ẩn của desktop */
 
 @media (max-width: 1030px) {
+    .min_max input{
+        width: auto;
+        padding: 5px;
+        border-radius: 10px;
     
+        outline: none;
+     }
+     .grid_check{
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto;
+        gap: 20px 25px;
+        padding: 10px;
+    }
+    .min_max{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .min_max_grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 20px;
+    }
+    .min_max span{
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+
     .container .banner {
         height: 214px;
     }

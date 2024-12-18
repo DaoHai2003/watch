@@ -334,7 +334,7 @@ i.fa.fa-bars {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0px;
+    margin: 20px 0px;
 }
 
 .sale_thuonghieu h1 {
@@ -1059,13 +1059,81 @@ i.fa.fa-bars {
     z-index: 10;
    
 }
-.form_mess_user_1{
-    height: 300px;
-    width: 800px;
-    border-radius: 100%;
-    transform: translateX(-30%);
-    margin-top: -60px;
-    z-index: 9;
-    box-shadow: rgba(17, 12, 46, 0.067) 0px 48px 100px 0px;}
+.form_fix{
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    position: fixed;
+    bottom:-450px;
+    right:80px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form_fix_1{
+    bottom:150px;
+    transition: 0.5s;
+    opacity: 1;
+}
+.form_mess{
+    background-color: brown;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.form_mess_input{
+    width: 100%;
+    padding: 10px 20px;
+}
+.form_mess_login{
+    background-color: white;
+    height: 100%;
+    width: 150%;
+    border-radius: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-75%;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.anime_mess_login{
+    bottom:-15%;
+    transition: 0.5s;
+}
+.form_mess_login h2 {
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+.form_mess_login h2 button {
+   color: white;
+   border: none;
+   background-color: brown;
+   width: 200px;
+   padding: 10px 10px;
+   border-radius: 10px;
+   
+}
+
+.form_mess_input h2{
+   color: white;
+   font-size: 17px;
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.form_mess_input input{
+   width: 100%;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   
+}
 /* tư vấn */
 /************* end reponsive *****************/

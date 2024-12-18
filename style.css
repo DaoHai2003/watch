@@ -105,7 +105,7 @@
   
   @media (min-width: 980px) and (max-width: 1161px) {
     .ag-format-container {
-      width: 960px;
+      width: 100%;
     }
   
   }

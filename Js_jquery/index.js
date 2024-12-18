@@ -29,6 +29,18 @@ $(document).ready(function () {
         $(".menu_overlay").fadeOut(); 
     });
 });
+// tư vấn login
+$(document).ready(function () {
+    $(".form_mess_login ").click(function () { 
+        $(".form_mess_login").toggleClass("anime_mess_login");
+        
+    });
+    $(".btn_mess_user ").click(function () { 
+        $(".form_fix").toggleClass("form_fix_1");
+        
+    });
+});
+// tư vấn login
 
 // Footer reponsive
 $(document).ready(function(){
