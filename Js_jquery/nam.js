@@ -151,7 +151,7 @@ $(document).ready(function () {
 
 // menu_push_giá
 $(document).ready(function () {
-  $(".price").click(function () {
+  $(".price_click").click(function () {
       $(".filter_block").addClass("filter_block_active");
       $(".bk_black").addClass("bk_bl"); 
   });
@@ -196,3 +196,46 @@ $(document).ready(function(){
     }
   }) 
 })
+
+// tab sản phẩm
+$(document).ready(function () {
+    $(".tab_list_1").addClass('tab_list');
+    $(".filter_mb_price .price").click(function () {
+      let index = $(this).index(); 
+      $(".tab_list").removeClass("tab_list"); 
+      $(".tab_list_" + (index + 1)).addClass("tab_list"); 
+  });
+  $(".tab_1").addClass('tab_bck');
+  $(" .price").click(function () {
+    let index = $(this).index(); 
+    $(".tab_bck").removeClass("tab_bck"); 
+    $(".tab_" + (index + 1)).addClass("tab_bck"); 
+});
+  
+});
+
+
+// 
+$(document).ready(function () {
+  // Khi hover vào menu chính
+  $(".desktop-menu > li").on("mouseenter", function () {
+      $(this).find(".dropdown-content").stop(true, true).slideDown(300);
+  });
+
+  // Khi rời khỏi menu chính
+  $(".desktop-menu > li").on("mouseleave", function () {
+      const dropdown = $(this).find(".dropdown-content");
+
+      // Delay việc ẩn dropdown để kiểm tra trạng thái hover
+      setTimeout(() => {
+          if (!dropdown.is(":hover")) {
+              dropdown.stop(true, true).slideUp(300);
+          }
+      }, 100);
+  });
+
+  // Khi chuột rời khỏi nội dung dropdown
+  $(".dropdown-content").on("mouseleave", function () {
+      $(this).stop(true, true).slideUp(300);
+  });
+});

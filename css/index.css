@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 /* header */
-
+h4{
+    font-size: 17px  !important;
+}
+h3{
+    font-size: 20px  !important;
+}
 
 .container {
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -184,13 +189,167 @@ i.fa.fa-bars {
     width: 100%; 
 }
 
+/* bck hover */
+/* Cấu hình bck-hover-navbar */
+.bck-hover-navbar {
+    color: gray;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px 100px;
+    opacity: 0; /* Ẩn navbar mặc định */
+    visibility: hidden; /* Ẩn navbar mặc định */
+    transition: opacity 0.3s, visibility 0s linear 0.3s; /* Mượt mà cho opacity và visibility */
+    z-index: 100;
+    border-top: 3px solid gray;
+}
+
+/* Khi navbar được hiển thị */
+.bck-hover-navbar.show-navbar-hover {
+    opacity: 1; /* Hiển thị navbar */
+    visibility: visible; /* Navbar có thể nhìn thấy */
+    transition: opacity 0.3s, visibility 0s linear 0s; /* Chỉ thay đổi opacity và visibility ngay lập tức */
+}
+
+/* Cấu hình cho menu item trong navbar */
+.bck-hover-navbar .hover-menu-sp {
+    line-height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Cấu hình cho tiêu đề trong menu item */
+.bck-hover-navbar .hover-menu-sp h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Khi hover lên tiêu đề trong menu item */
+.bck-hover-navbar .hover-menu-sp h2:hover {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+/* end bck hover */
 
 /* menu */
 
-
+.bck-hover-navbar.show-navbar-hover {
+    display: flex; /* Hiển thị navbar */
+    opacity: 1; /* Hiển thị navbar */
+    transition: opacity 0.2s; /* Hiệu ứng mượt mà */
+}
 /* end header */
 
+/* form đăng nhập */
+.form_login{
+    position: absolute;
+    width: 500px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -5;
+    transition: 0.2s;
 
+}
+.form_show{
+    opacity: 1;
+    transition: 0.2s;
+    z-index: 100;
+
+}
+.form{
+   max-width: 100%;
+   background: rgba(0, 0, 0, 0.788);
+   padding: 50px 30px;
+   color: white;
+   transition: 0.2s;
+}
+.form h1{
+ text-align: center;
+ font-size: 25px;
+}
+.input_user{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-top: 15px;
+}
+.input_user i{
+    color: white;
+    font-size: 20px;
+}
+.input_password i{
+    color: white;
+    font-size: 20px;
+}
+.input_check{
+   display: flex;
+   justify-content: space-between;
+   font-size: 18px;
+   margin-top: 10px;
+
+}
+.ck_box{
+    display: flex;
+    align-items: center;
+}
+.ck_box input{
+    margin-right: 10px;
+}
+
+.form_login input{
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.733);
+    border: none;
+    outline: none;
+    color: white;
+}
+.form_login .icon_login{
+    padding: 10px 10px;
+    background-color: brown;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.input_password{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-top: 15px;
+}
+.btn_login{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between
+    ;
+}
+.btn_login button{
+    border: none;
+    color: white;
+    background: brown;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.btn_login .dn{
+    border: 1px solid brown !important;
+    color: brown;
+    background: none !important;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+/* form đăng nhập */
 /************************** body ***********************/
 
 .banner {
@@ -266,7 +425,6 @@ i.fa.fa-bars {
 }
 .list_thuong_hieu .tab {
     transition: filter 0.5s;
-
     border-radius: 3px;
     padding: 0px 17px;
     display: flex;
@@ -390,6 +548,13 @@ i.fa.fa-bars {
 /* Protduct_list */
 .product_list{
     margin-top: 30px;
+   
+}
+.pr_ls{
+    display: none;
+}
+.tab_list{
+    display: block;
 }
 .product_list h2{
     text-align: center;
@@ -460,6 +625,12 @@ i.fa.fa-bars {
 .table_ut_txt h1{
     margin: 0;
     padding: 0;
+    font-size: 20px;
+}
+.table_ut_txt p{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
 }
 .table_ut_txt {
     margin-left: 20px;
@@ -507,13 +678,27 @@ i.fa.fa-bars {
     justify-content: center;
     margin: 20px 0px;
 }
+.tab_thuong_hieu{
+    justify-content: center !important; 
+}
 .Featured_txt .list_thuong_hieu_n .tab{
     margin: 5px;
     color: #4d585e;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     padding: 7px 20px;
     border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
 }
+.Featured_txt .list_thuong_hieu_n .tab_th{
+    margin: 5px;
+    color: #4d585e;
+    border: 1px solid lightgray;
+    padding: 10px 30px;
+    border-radius: 5px;
+   
+}
+
 .Featured_txt .list_thuong_hieu_n .tab a{
     text-decoration: none;
     padding-right: 10px;
@@ -557,155 +742,296 @@ i.fa.fa-bars {
 /* end Thương hiệu nổi bật */
 
 /* Tin tức */
-.Tintuc .Tintuc_grid{
-   display: grid;
-   grid-template-columns: repeat(3, minmax(0,33%));
-   justify-content: space-between;
+.sp_grid_blog{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-.Tintuc h2{
-    text-align: center;
-    color: gray;
-    font-weight: 500;
+.sp_grid_blog_2{
+    display: grid;
+    grid-template-columns: 66% 32% ;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-
-.Tintuc .Tintuc_grid .tt_grid_1{
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(2, minmax(0,50%));
-   justify-content: space-between;
+.sp_blog_1_1{
+    display: grid;
+    grid-template-columns: 100% ;
+    justify-content: space-between;
 }
-.Tintuc .Tintuc_grid .tt_grid_2{
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(1, minmax(0,100%));
-   justify-content: space-between;
+.blog_img_1{
+    background-image:url("../IMG2/tintuc/blog_8.jpg");
+    background-position: center; 
+	width: 100%;
+	height: 250px;
 }
-.Tintuc .Tintuc_grid .tt_grid_3{
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(1, minmax(0,100%));
-   justify-content: space-between;
+.blog_img_2{
+    background-image:url("../IMG2/tintuc/12.jpg");
+    background-position: center; 
+	width: 100%;
+	height: 250px;
 }
-.Tintuc .Tintuc_grid .tt_grid_3 img{
-   width: 20%;
-   display: grid;
-   grid-template-columns: repeat(1, minmax(0,100%));
-   justify-content: space-between;
+.sp_blog_1{
+     width: 100%;
 }
-.tt_grid_3_1,.tt_grid_3_2,.tt_grid_3_3,
-.tt_grid_3_4,.tt_grid_3_5{
-    display: flex;
-    align-items: center;
-}
-.Tintuc_grid img{
-    padding:5px;
-    border-radius: 15px;
-}
-.tt_grid_3 p {
+.sp_blog_1 p{
     display: -webkit-box;
     color: gray;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; 
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
+
 }
+.sp_blog_1 h4{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+.sp_blog_1 h3{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 5px 0px;
+}
+.sp_blog_1 p{
+    color: gray;
+}
+.sp_blog_1 img{
+     width: 100%;
+}
+.blog_button button{
+   background-color: black;
+   border: none;
+   padding: 10px 20px;
+   color: white;
+   border-radius: 5px;
+
+}
+.blog_button{
+  text-align: right;
+  margin-top: 20px;
+
+}
+/*  */
 /* end Tin tức */
 
 
 /* footer */
-.footer {
-    background-color: rgb(59, 59, 59);
-    margin-top: 10px;
-    color: white;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.footer .container {
-    display: flex;
+.footer{
+    background-color:#9f1d25;
     width: 100%;
-    height: auto;
-    background-color: rgb(59, 59, 59);
+    margin-top: 20px;
+}
+.footer_bck{
+    padding-top: 20px;
+}
+.ft_grid{
+    display: grid;
+    grid-template-columns: 21% 18% 18% 30%;
     justify-content: space-between;
-    padding: 10px 20px;
-    padding-top: 50px;
+    padding: 20px;
+    color: white;
 }
-
-.ft_2_1 {
-    display: flex;
+.ft_grid{
+    line-height: 40px;
+}
+.ft_grid p{
+    font-size: 17px;
+}
+.ft_1 iframe{
+    max-width: 100%;
+    height: 40%;
+}
+.form_ft .fr{
+    width: 100%;
+}
+.form_ft h3{
+    text-align: center;
+}
+.form_ft .ft_1_1{
+    display: grid;
+    grid-template-columns: 49% 49%;
     justify-content: space-between;
-}
 
-.footer img {
-    width: 70%;
 }
-
-.tongdai {
-    transform: rotate(-7deg);
-}
-
-.footer ul li {
-    list-style: none;
-    padding-bottom: 10px;
-}
-
-.footer p {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.cr {
-    display: flex;
-    justify-content: center;
-}
-
-.cr_1,
-.cr_2,
-.cr_3 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.cr_1 {
-    border: none;
-    background-color: #6c6d70;
+.form_ft .fr input{
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
     color: white;
+    padding-left: 10px;
 }
-
-.cr_2 {
+.form_ft .fr input::placeholder {
     color: white;
-    background-color: gray;
+    
 }
-
-.cr_3 {
+.form_ft .fr_3 {
+    height: 200px;
+}
+.ft_end{
+    background-color: #79161d;
+    width: 100%;
+    padding: 10px 0px;
     color: white;
-    background-color: gray;
+    text-align: center;
+    
 }
+  
+  
 
-.ft_1 {
-    width: 30%;
-}
-
-.ft_2,
-.ft_3,
-.ft_4,
-.ft_5 {
-    width: 30%;
-    padding: 10px;
-    margin-left: 10px;
-}
-.footer_2{
-    display: none;
-  }
 /* End Footer */
+
+/* hover button */
+.list_thuong_hieu_n{
+    position: relative;
+}
+
+.price:hover {
+    border: 1px solid black;
+}
+.price  a{
+    transition: color 0.4s linear;
+}
+.price:hover{
+     border: 1px solid black !important;
+     color: black !important;
+}
+
+
+.tab_bck { 
+    border: 1px solid black !important ;
+     
+}
+.tab_bck p{ 
+      color: black;
+    
+     
+}
+/* end hover button */
+/* ẩn của desktop */
+/* tư vấn */
+.btn_mess_user{
+    background-color: brown;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    right: 80px;
+    position: fixed;
+    bottom: 60px;
+    z-index: 10;
+}
+.form_mess_user{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 10;
+   
+}
+.form_fix{
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    position: fixed;
+    bottom:-450px;
+    right:80px;
+    border-radius: 5px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form_fix_1{
+    bottom:150px;
+    transition: 0.5s;
+    opacity: 1;
+}
+.form_mess{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.form_mess_input{
+    width: 100%;
+    padding: 10px 20px;
+}
+.form_mess_login{
+    background-color: white;
+    height: 100%;
+    width: 150%;
+    border-radius: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-75%;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.anime_mess_login{
+    bottom:-20%;
+    transition: 0.5s;
+}
+.form_mess_login h2 {
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+.form_mess_login h2 button {
+   color: white;
+   border: none;
+   background-color: brown;
+   width: 200px;
+   padding: 10px 10px;
+   border-radius: 10px;
+   
+}
+
+.form_mess_input h2{
+   color: white;
+   font-size: 17px;
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.form_mess_input input{
+   width: 100%;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   
+}
+     /* footer */
+     .footer_bck{
+        display: none;
+    }
+    .footer_mb{
+        color: white;
+        line-height: 40px;
+        padding: 20px;
+    }
+    .ft_mb_grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_mb h3{
+        font-size: 17px;
+    }
+     /* footer */
 /************************** end body *********************/
 
 /************* reponsive *****************/
@@ -723,6 +1049,9 @@ i.fa.fa-bars {
     }
     .table_ut_tt_mobile{
         display: none;
+    }
+    .hide_ft_4_deskop{
+        display: none !important;
     }
 }
 
@@ -772,8 +1101,67 @@ i.fa.fa-bars {
     .ls_grid_ipad{
         display: none;
     }
+    .logo{
+        font-size: 25px !important;
+    }
+    body{
+        padding: 0px 10px !important;
+      }
+      /* tintuc */
+      .blog_img_1{
+        background-image:url("../IMG2/tintuc/blog_8.jpg");
+        background-position: center; 
+        width: 100%;
+        height: 200px;
+    }
+    .blog_img_2{
+        background-image:url("../IMG2/tintuc/12.jpg");
+        background-position: center; 
+        width: 100%;
+        height: 200px;
+    }
+      /* end tintuc */
+      /* footer */
+      .ft_grid{
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        justify-content: space-between;
+        padding: 20px;
+        color: white;
+        }
+        .ft_grid .ft_4{
+         display: none;
+        }
+        .form_ft h3{
+            color: white;
+            margin-bottom: 10px;
+            
+        }
+        .form_ft .fr input{
+           
+            padding: 10px 20px;
+        }
+          .hide_ft_4_deskop{
+            padding: 20px;
+           
+        }
+        .ft_2{
+            margin-left: 20px;
+        }
+      /* end footer */
 }
+/* footer */
+@media (min-width: 767px){
+    .footer_mb{
+        display: none;
+    }
+    .footer_bck{
+        display: block !important;
+    }
+}
+/* end footer */
 @media (max-width: 767px) {
+   
     .menu_push a{
         text-decoration: none;
         padding: 10px;
@@ -859,121 +1247,7 @@ i.fa.fa-bars {
         border-radius: 10px;
     }
 
-    /* Footer */
 
-    footer{
-        font-size: 5px;
-        display: none;
-      }
-      .footer_2{
-        background-color: black;
-        display: block;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-      }
-      .tongdai {
-        display: flex;
-        color: white;
-        width: 100%;
-        transform: rotate(-5deg);
-        align-items: center;
-        justify-content: center;
-      }
-      
-      /* hệ thống shop */
-      .hethongshop{
-        color: white;
-        width: 100%;
-        font-size: 25px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-      .hethongshop .icon_arrow_1{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        padding: 5px;
-        margin-top: -5px;
-      }
-      .icon_arrow_2{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        margin-top: -5px;
-        padding: 5px;
-      }
-      .list_hethongshop{
-        color: white;
-        padding: 10px;
-        line-height: 40px;
-      }
-      li{
-        list-style: none;
-      }
-    
-      /* thông tin shop */
-      .thongtinshop{
-        color: white;
-        width: 100%;
-        font-size: 25px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-      .thongtinshop .icon_arrow_3{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        padding: 5px;
-        margin-top: -5px;
-      }
-      .icon_arrow_4{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        margin-top: -5px;
-        padding: 5px;
-      }
-      .list_thongtinshop{
-        color: white;
-        padding: 10px;
-        line-height: 40px;
-      }
-      .lienheshop{
-        color: white;
-        width: 100%;
-        font-size: 25px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-      .lienheshop .icon_arrow_5{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        padding: 5px;
-        margin-top: -5px;
-      }
-      .icon_arrow_6{
-        font-weight: bold;
-        position: absolute;
-        right: 0;
-        color: white;
-        margin-top: -5px;
-        padding: 5px;
-      }
-      .list_lienheshop{
-        color: white;
-        padding: 10px;
-        line-height: 40px;
-      }
       /* info shop */
       .info_shop{
         color: white;
@@ -993,147 +1267,45 @@ i.fa.fa-bars {
     }
     .logo{
         margin-left: 10px;
+        font-size: 20px !important;
+    }
+    .bk_mess,.tamgia{
+        display: none;
+    }
+    .mess_user{
+        display: none !important;
+    }
+    .blog_img_1{
+        background-image:url("../IMG2/tintuc/blog_8.jpg");
+        background-position: center; 
+        width: 100%;
+        height: 120px;
+    }
+    .blog_img_2{
+        background-image:url("../IMG2/tintuc/12.jpg");
+        background-position: center; 
+        width: 100%;
+        height: 120px;
+    }
+    .sp_blog_1 h3{
+        font-size: 15px !important;
+
+        
+    }
+    body{
+        padding: 0px 20px;
+    }
+    .form_login{
+        display: none;
+    }
+    .Featured_grid_nu{
+        margin-top: 20px;
     }
     }
     
 
+    
 
-/* hover button */
-.list_thuong_hieu_n{
-    position: relative;
-}
-.price:hover a{
-    color: #fff;
-    transition: color 0.4s linear;
-}
-.price  a{
-    transition: color 0.4s linear;
-}
-.price{
-    position: relative;
-}
-.price::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #4d585e;
-    z-index: -1;
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-    transform: scaleX(0);
-}
-.price:hover::before{
-    transform: scaleX(1);
-}
-/* end hover button */
-/* ẩn của desktop */
-/* tư vấn */
-.btn_mess_user{
-    background-color: brown;
-    border: none;
-    padding: 15px;
-    width: 300px;
-    font-size: 17px;
-    border-radius: 10px;
-    color: white;
-    text-align: left;
-    right: 80px;
-    position: fixed;
-    bottom: 60px;
-    z-index: 10;
-}
-.form_mess_user{
-    height: 500px;
-    width: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    z-index: 10;
-   
-}
-.form_fix{
-    opacity: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    position: fixed;
-    bottom:-450px;
-    right:80px;
-    border-radius: 5px;
-    z-index: 10;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.form_fix_1{
-    bottom:150px;
-    transition: 0.5s;
-    opacity: 1;
-}
-.form_mess{
-    background-color: brown;
-    height: 400px;
-    width: 300px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-.form_mess_input{
-    width: 100%;
-    padding: 10px 20px;
-}
-.form_mess_login{
-    background-color: white;
-    height: 100%;
-    width: 150%;
-    border-radius: 30%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom:-75%;
-    text-align: center;
-    transition: 0.5s;
 
-}
-.anime_mess_login{
-    bottom:-15%;
-    transition: 0.5s;
-}
-.form_mess_login h2 {
-    font-size: 17px;
-    margin-top: 10px;
-
-}
-.form_mess_login h2 button {
-   color: white;
-   border: none;
-   background-color: brown;
-   width: 200px;
-   padding: 10px 10px;
-   border-radius: 10px;
-   
-}
-
-.form_mess_input h2{
-   color: white;
-   font-size: 17px;
-   text-align: center;
-   margin-bottom: 20px;
-   margin-top: 20px;
-}
-.form_mess_input input{
-   width: 100%;
-   padding: 10px 20px;
-   border: none;
-   border-radius: 10px;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   
-}
 /* tư vấn */
 /************* end reponsive *****************/

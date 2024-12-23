@@ -462,10 +462,14 @@ input::placeholder {
 .Review{
     margin-left: 15px;
 }
+.grid_cmt_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
 .grid_cmt{
     display: flex;
     align-items: center;
-
 }
 .avt img{
     width: 40px;
@@ -476,6 +480,32 @@ input::placeholder {
 .cmt_user{
     color: gray;
     margin-left: 50px;
+}
+.share{
+    display: flex;
+    align-items: center;
+}
+.share p a{
+    text-decoration: none;
+    color: gray;
+}
+.share .fa-share{
+    margin-right: 7px;
+}
+.share span{
+    color: gray;
+    margin-right: 10px;
+}
+.like_share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 5px;
+    
+}
+.like .fa-thumbs-up{
+    margin-right: 10px;
 }
 .checked {
     color: orange;
@@ -859,6 +889,13 @@ input::placeholder {
         padding: 10px;
         line-height: 40px;
       }
+      .logo{
+        margin-left: 10px;
+        font-size:  25px !important;
+      }
+      body{
+        padding: 0px 10px !important;
+      }
     /* sản phẩm */
   
     
@@ -1059,6 +1096,10 @@ input::placeholder {
         text-align: center;
         padding: 10px;
         line-height: 40px;
+      }
+      .logo{
+        margin-left: 10px;
+        font-size:  20px !important;
       }
     }
     

@@ -393,7 +393,7 @@ input[type="checkbox"]{
     white-space: nowrap; 
 }
 .sanpham_nam{
-    width: 75%;
+    width: 80%;
     padding: 10px;
 }
 
@@ -918,6 +918,10 @@ input[type="checkbox"]{
         padding: 10px;
         line-height: 40px;
       }
+      .logo{
+        margin-left: 10px;
+        font-size:  25px !important;
+      }
     
 
 }
@@ -1106,6 +1110,10 @@ input[type="checkbox"]{
         text-align: center;
         padding: 10px;
         line-height: 40px;
+      }
+      .logo{
+        margin-left: 10px;
+        font-size:  20px !important;
       }
     }
     

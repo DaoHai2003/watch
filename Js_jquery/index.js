@@ -17,6 +17,17 @@ $(document).ready(function () {
         $('.mb_txt_ut_4').slideToggle();
     });
 });
+// form đăng nhập
+$(document).ready(function () {
+    $(".click_login").click(function () { 
+        $(".form_login").addClass("form_show");
+        $(".menu_overlay").fadeToggle(); 
+    });
+    $(".main, .menu_overlay").click(function () {
+        $(".form_login").removeClass("form_show");
+        $(".menu_overlay").fadeOut(); 
+    });
+});
 // menu_push
 $(document).ready(function () {
     $(".menu-icon").click(function () {
@@ -96,14 +107,21 @@ $(document).ready(function(){
 })
 
 
-// xóa wow
 
-$(document).ready(function () { 
-    function removeWowOnMobile() {
-        if ($(window).width() <= 768) { 
-            $('.wow').removeClass('wow animate__animated animate__fadeInDown animate__fadeInUp ');
-        }
-    }
-    removeWowOnMobile();
+// tab 
+// tab sản phẩm
+$(document).ready(function () {
+    $(".tab_list_1").addClass('tab_list');
+    $(".tab_thuong_hieu .price").click(function () {
+      let index = $(this).index(); 
+      $(".tab_list").removeClass("tab_list"); 
+      $(".tab_list_" + (index + 1)).addClass("tab_list"); 
+  });
+    $(".tab_1").addClass('tab_bck');
+    $(".tab_thuong_hieu .price").click(function () {
+      let index = $(this).index(); 
+      $(".tab_bck").removeClass("tab_bck"); 
+      $(".tab_" + (index + 1)).addClass("tab_bck"); 
+  });
   
 });

@@ -12,14 +12,7 @@
     <link rel='stylesheet' href='https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.css'><link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./Js_jquery/index.js"></script>
-    <script src="./Js_jquery/wow.js"></script>
-    <script>
-        $(function(){
-            new WOW().init();
-        });   
-    </script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="./animate.css-main_2/animate.css"/>
 </head>
 
 <body>
@@ -45,7 +38,6 @@
                         <div class="nam"><a href="./nU.html">NỮ</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
                         <div class="nam"><a href="./donghodoi.html">CẶP ĐÔI</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
                         <div class="nam"><a href="./phukien.html">PHỤ KIỆN</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
-                        <div class="nam"><a href="./trangsuc.html">TRANG SỨC</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
                         <div class="nam"><a href="./lienhe.html">LIÊN HỆ</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
                         <div class="nam"><a href="./tintuc.html">TIN TỨC</a><span class="icon_push"><i class="fa fa-angle-right"></i></span></div>
                     </div>
@@ -65,7 +57,7 @@
                     <div class="sign-in">
                         <div class="sign-in-item">
                             <div class="item_1">
-                                <i class="fa fa-user" aria-hidden="true"></i>
+                               <span class="click_login"> <i class="fa fa-user" aria-hidden="true"></i></span>
                             </div>
                             <div class="item_2">
                                 <i class='fa fa-heart' style='font-size:24px'></i>
@@ -87,27 +79,25 @@
                     </div>
                     <!--  -->
                 </div>
-                <!--end mobile -->
-              
+                <!--end mobile -->  
             </div>
-
-
         </div>
         <hr class="hr_desktop_menu">
         <div class="header-navigation">
             <div class="container" style="max-width: 1100px !important;">
                 <ul class="desktop-menu">
-                    <li><a href="./index.html">TRANG CHỦ</a></li>
-                    <li><a href="./nam.html">NAM</a></li>
-                    <li><a href="./nu.html">NỮ</a></li>
-                    <li><a href="./donghodoi.html">CẶP ĐÔI</a></li>
-                    <li><a href="./trangsuc.html">TRANG SỨC</a></li>
-                    <li><a href="./phukien.html">PHỤ KIỆN</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="./index.html" class="menu-item trangchu">TRANG CHỦ</a></li>
+                    <li><a href="./nam.html" class="menu-item nam">NAM</a></li>
+                    <li><a href="./nu.html" class="menu-item nu">NỮ</a></li>
+                    <li><a href="./donghodoi.html" class="menu-item capdoi">CẶP ĐÔI</a></li>
+                    <li><a href="./phukien.html" class="menu-item phukien"> PHỤ KIỆN</a></li>
+                    <li><a href="./lienhe.html" class="menu-item lienhe">LIÊN HỆ</a></li>
+                    <li><a href="./tintuc.html" class="menu-item tintuc">TIN TỨC</a></li>
                 </ul>
             </div>
         </div>
+        
+        
             <div class="bottom-sale">
                 <button style="width: 100% ;  background-color: brown; border: none; 
                 padding: 15px; color: white; border-radius: 5px; margin-top: 20px;
@@ -115,6 +105,44 @@
             </div>
     </div>
     <!--end Header -->
+    <!-- form dang ky -->
+      <div class="form_login">
+          <div class="form">
+             <h1>Đăng Ký</h1>
+             <div class="input_user">
+                   <input type="text" placeholder="Tên đăng ký">
+                   <p class="icon_login"><i class="fa fa-user"  aria-hidden="true"></i></p>
+             </div>
+             <div class="input_user">
+                   <input type="text" placeholder="Email">
+                   <p class="icon_login"><i class="fa fa-user"  aria-hidden="true"></i></p>
+             </div>
+             <div class="input_password">
+                    <input type="password" placeholder="mật khẩu">
+                    <p class="icon_login"><i class="fa fa-lock" aria-hidden="true"></i></p>
+             </div>
+             <div class="input_password">
+                    <input type="password" placeholder="Nhập lại mật khẩu">
+                    <p class="icon_login"><i class="fa fa-lock" aria-hidden="true"></i></p>
+             </div>
+             <div class="input_check">
+                  <div class="ck_box">
+                        <input type="checkbox" > 
+                        <p>nhớ mật khẩu</p>
+                      
+                  </div>
+                  <div class="reset_pass">
+                       <p>Nhập lại mật khẩu</p>
+                  </div>
+                   
+             </div>
+             <div class="btn_login">
+                  <button>Đăng ký</button>
+                  <button class="dn">Đăng nhập</button>
+             </div>
+          </div>
+      </div>
+    <!-- end form dang ky -->
     <!-- body -->
     <div class="main">
      
@@ -139,7 +167,6 @@
                     <li>
                        <img src="./img_index/banner-trang-chu.jpg" width="100%" alt="">
                     </li>
-                  
                 </ul>
                 </div>
             </div>
@@ -278,7 +305,7 @@
 
               <!-- partial:index.partial.html -->
               <div class="ag-format-container">
-                <h2 style="text-align: center; font-size: 20px; margin-bottom: 0px; margin-top: 10px;">ĐỒNG HỒ NAM BÁN CHẠY</h2>
+                <h2 style="font-size: 25px; margin-bottom: 0px; margin-top: 10px; font-weight: 600; ">Sản phẩm được giảm giá 20%</h2>
                 <div class="layout">
                 <ul class="slider">
                     <li>
@@ -797,7 +824,7 @@
                     <div class="img_ft_nam">
                         <img src="./img_index/ft_nam_2x2.png" width="25%" alt="">
                     </div>
-                    <h2 style="text-align: center; font-weight: 500;">Thương hiệu nổi bật dành cho nam</h2>
+                    <h2 style="text-align: center; font-weight: 500; font-size: 20px;">Thương hiệu nổi bật dành cho nam</h2>
                     <div class="Featured_txt">     
                         <div class="list_thuong_hieu_n">
                             <div class="tab price"><a href="">Omega</a><i class='fa fa-angle-right'></i> </div>
@@ -821,7 +848,7 @@
                     <div class="img_ft_nu">
                         <img src="./img_index/ft_nu_2x2.png" width="25%" alt="">
                     </div>
-                    <h2 style="text-align: center; font-weight: 500;">Thương hiệu nổi bật dành cho nữ</h2>
+                    <h2 style="text-align: center; font-weight: 500; font-size: 20px;">Thương hiệu nổi bật dành cho nữ</h2>
                     <div class="Featured_txt">     
                         <div class="list_thuong_hieu_n">
                             <div class="tab price"><a href="">Omega</a><i class='fa fa-angle-right'></i> </div>
@@ -844,8 +871,16 @@
             </div>
             <!-- end Thương hiệu nổi bật  -->
              <!-- Trưng bày sản phẩm nam -->
-             <div class="product_list">
-                 <h2 style="font-size: 20px;">ĐỒNG HỒ NAM BÁN CHẠY</h2>
+             <div class="Featured_txt">     
+                <div class="list_thuong_hieu_n tab_thuong_hieu">
+                    <div class="tab tab_th price tab_1"><p>Nam</p> </div>
+                    <div class="tab tab_th price tab_2"><p>Nữ </p></div>
+                    <div class="tab tab_th price tab_3" ><p>Cặp đôi</p> </div>
+                    <div class="tab tab_th price tab_4"><p>Phụ kiện</p> </div>
+                </div>          
+            </div>      
+            <!-- tab_1_nam -->
+            <div class="product_list pr_ls tab_list_1">
                  <div class="product_list_grid">
                      <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
                          <div class="pr_list_card_img">
@@ -961,10 +996,11 @@
                      </div>                                                    
                  </div>
              </div> 
+            <!-- end tab_1_nam -->
              <!-- end Trưng bày sản phẩm nam -->
                <!-- Trưng bày sản phẩm nữ --> 
-             <div class="product_list">
-                 <h2 style="font-size: 20px;">ĐỒNG HỒ NỮ BÁN CHẠY</h2>
+             <div class="product_list  pr_ls tab_list_2">
+
                  <div class="product_list_grid">
                      <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
                          <div class="pr_list_card_img">
@@ -1085,131 +1121,325 @@
                  </div>
              </div> 
              <!-- end Trưng bày sản phẩm nũ -->
-            <!-- Tin tức -->
-            <div class="Tintuc">
-                <h2>TIN TỨC</h2>
-                <div class="Tintuc_grid">
-                    <!--grid_ 1-->
-                    <div class="tt_grid_1">
-                        <div class="tt_grid_1_1">
-                            <img src="./IMG2/tintuc/1.jpg"  width="100%" alt="">
+              <!-- Trưng bày sản phẩm cặp đôi --> 
+             <div class="product_list  pr_ls tab_list_3">
+                <div class="product_list_grid">
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/1/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/1/1.avif" alt="" class="pr_img_hover">
                         </div>
-                        <div class="tt_grid_1_2">
-                            <img src="./IMG2/tintuc/2.jpg" width="100%" alt="">
-                        </div>
-                        <div class="tt_grid_1_3">
-                            <img src="./IMG2/tintuc/3.jpg" width="100%" alt="">
-                        </div>
-                        <div class="tt_grid_1_4">
-                            <img src="./IMG2/tintuc/4.jpeg" width="100%" alt="">                           
+                        <div class="pr_list_txt">
+                            <p>G-Shock GMD-S5600SG-7DR –– Quartz – Mặt Số 45.7 mm × 40.5 mm, Đa Chức Năng, Chống Nước 20ATM
+                            </p>
+                            <h4>15.506.000đ</h4>
                         </div>
                     </div>
-                    <!--end grid_ 1-->
-                    <!--grid_ 2-->
-                    <div class="tt_grid_2">
-                        <img src="./IMG2/tintuc/5_4.jpg" height="97%"   width="100%" alt="">
-                    </div>
-                    <!--end grid_ 2-->
-                    <!--grid_ 3-->
-                    <div class="tt_grid_3 grid_3_none">
-                        <div class="tt_grid_3_1">
-                            <img src="./IMG2/tintuc/6.jpg" width="100%" alt="">  
-                            <p>Strap là gì? Ưu nhược điểm của từng loại strap</p>  
-                        </div>          
-                        <div class="tt_grid_3_2">
-                            <img src="./IMG2/tintuc/7.jpg" width="100%" alt="">  
-                            <p>Chức năng Annual Calendar trên đồng hồ là gì?</p>   
-                        </div>                
-                        <div class="tt_grid_3_3">
-                            <img src="./IMG2/tintuc/8.jpg" width="100%" alt="">
-                            <p>CasiOak Edifice và 3 điều tạo nên sức hút đặc biệt</p>     
-                        </div>                
-                        <div class="tt_grid_3_4">
-                            <img src="./IMG2/tintuc/9.jpg" width="100%" alt="">
-                            <p>METAS – Tiêu chuẩn kiểm định khiến cả ngành đồng hồ phải “ngả mũ”</p>     
-                        </div>                
-                        <div class="tt_grid_3_5">
-                            <img src="./IMG2/tintuc/10.jpg" width="100%" alt=""> 
-                            <p>	
-                                Đồng hồ chế tác là gì? Thước đo của sự xa xỉ trong giới đồng hồ</p>    
-                        </div>                
-                    </div>
-                    <!--end grid_ 3-->
-                    <!--grid_ 2-->
-                    <div class="tt_grid_2">
-                        <img src="./IMG2/tintuc/17_4.jpg"  width="100%" alt="">
-                    </div>
-                    <!--end grid_ 2-->
-                    <!--grid_ 1-->
-                    <div class="tt_grid_1">
-                        <div class="tt_grid_1_1">
-                            <img src="./IMG2/tintuc/11.jpg"  height="146.08px" width="100%" alt="">
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/2/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/2/1.avif" alt="" class="pr_img_hover">
                         </div>
-                        <div class="tt_grid_1_2">
-                            <img src="./IMG2/tintuc/14.jpg"  height="146.08px"   width="100%" alt="">
-                        </div>
-                        <div class="tt_grid_1_3">
-                            <img src="./IMG2/tintuc/15.jpg"  height="146.08px"   width="100%" alt="">
-                        </div>
-                        <div class="tt_grid_1_4">
-                            <img src="./IMG2/tintuc/16.jpg"   height="146.08px"  width="100%" alt="">                           
+                        <div class="pr_list_txt">
+                            <p>Daniel Wellington Quadro DW00100431 –– Quartz (Pin) – Mặt số 20mm, kính cứng, chống
+                            </p>
+                            <h4>41.940.000 ₫</h4>
                         </div>
                     </div>
-                    <!--end grid_ 1-->
-                  
-                    <!--grid_ 3-->
-                    <div class="tt_grid_3">
-                        <div class="tt_grid_3_1">
-                            <img src="./IMG2/tintuc/12.webp" width="100%" alt="">  
-                            <p>Cuộc chiến đồng hồ KOI và Casio – Người dùng sẽ chọn ai?</p>     
-                        </div>          
-                        <div class="tt_grid_3_2">
-                            <img src="./IMG2/tintuc/13.webp" width="100%" alt="">  
-                            <p>Tritium trên đồng hồ là gì? Tất tần tật thông tin bạn cần biết</p>     
-                        </div>                
-                        <div class="tt_grid_3_3">
-                            <img src="./IMG2/tintuc/17.jpg" width="100%" alt="">
-                            <p>Tritium trên đồng hồ là gì? Tất tần tật thông tin bạn cần biết</p>        
-                        </div>                
-                        <div class="tt_grid_3_4">
-                            <img src="./IMG2/tintuc/18.jpg" width="100%" alt="">
-                            <p>Giờ thế giới & đồng hồ giờ thế giới là gì? Tìm hiểu chi tiết</p>         
-                        </div>                
-                        <div class="tt_grid_3_5">
-                            <img src="./IMG2/tintuc/19.webp" width="100%" alt=""> 
-                            <p>Case đồng hồ – Tất cả kiến thức về vỏ đồng hồ bạn cần biết</p>        
-                        </div>                
+                    
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/3/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/3/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Certina DS Caimano Lady C035.007.22.117.01 –– Automatic – Mặt Số 29mm
+                            </p>
+                            <h4>6.380.000 ₫</h4>
+                        </div>
                     </div>
-                    <!--end grid_ 3-->
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/4/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/4/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Certina Ds Podium Lady C034.210.22.037.00 –– Quartz – Mặt Số 20mm
+                            </p>
+                            <h4>15.506.000đ</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/5/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/5/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Saga Long Xing Da Da 53111-SVGERD-2LH Phiên Bản Giới Hạn 999 Chiếc Toàn Cầu – Đính 73
+                            </p>
+                            <h4>8.180.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/6/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/6/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Tissot Lovely Square T058.109.33.456.00 Quartz (Pin) – 12 viên Kim Cương – Kính Sapphire
+                            </p>
+                            <h4>12.080.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/7/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/7/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Titoni Cosmo Queen 729 G-DB-541 –– Kính Sapphire – Automatic – Mặt Số 27mm, Mạ Vàng
+                            </p>
+                            <h4>40.060.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/8/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/8/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Saga Stella 71836-SVWHBL-2Kính Cứng – Quartz (Pin) – Mặt Số 20x37mm, Đá
+                            </p>
+                            <h4>4.050.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/9/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/9/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Saga 53767-SVLGLG-2  Quartz (Pin) – Giọt nắng long lanh trên nền nước yên ả – Vẻ đẹp độc
+                            </p>
+                            <h4>7.310.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card card_end wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/capdoi/10/hinhanhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/capdoi/10/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Koi K001.103.642.05.01.01 Quartz (Pin) – Mặt Số 28mm, Kính Sapphire, Chống Nước 5ATM
+                            </p>
+                            <h4>2.060.000 ₫</h4>
+                        </div>
+                    </div>    
+                    
+                    
                 </div>
-            </div>
-            <!-- end Tin tức -->
+            </div> 
+            <!-- end Trưng bày sản phẩm cặp đôi -->
+             <!-- Trưng bày sản phẩm phụ kiện --> 
+             <div class="product_list  pr_ls tab_list_4">
+        
+                <div class="product_list_grid">
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/1/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/1/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p> GMD-S5600SG-7DR 
+                            </p>
+                            <h4>5.506.000đ</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/2/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/2/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Daniel Wellington 
+                            </p>
+                            <h4>1.940.000 ₫</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/3/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/3/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Certina DS 
+                            </p>
+                            <h4>580.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/4/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/4/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Certina Podium Lady 
+                            </p>
+                            <h4>1.506.000đ</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/5/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/5/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Saga Long Xing Da 
+                            </p>
+                            <h4>680.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/6/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/6/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Tissot  Square 
+                            </p>
+                            <h4>2.080.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/7/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/7/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Titoni Cosmo 
+                            <h4>460.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/8/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/8/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p> 71836-SVWHBL
+                            </p>
+                            <h4>1.050.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/9/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/9/1.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p> 53767-SVLGLG-2  Quartz 
+                            </p>
+                            <h4>310.000 ₫</h4>
+                        </div>
+                    </div>
+                    <div class="product_list_card card_end wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
+                        <div class="pr_list_card_img">
+                            <img src="./IMG2/phukien/10/hinhtrungbay.avif" alt="" class="pr_img_default">
+                            <img src="./IMG2/phukien/10/11.avif" alt="" class="pr_img_hover">
+                        </div>
+                        <div class="pr_list_txt">
+                            <p>Koi  Quartz 
+                            </p>
+                            <h4>2.060.000 ₫</h4>
+                        </div>
+                    </div>    
+                    
+                    
+                </div>
+            </div> 
+            <!-- end Trưng bày sản phẩm phụ kiện -->
+           
+                  <!-- tin tức -->
+                  <div class="container">
+                    <hr>
+                    <div class="blog_button"><button>Xem tất cả</button></div>
+                    <div class="sp_grid_blog">
+                        <div class="sp_blog_1">
+                            <div class="blog_img_2">
+                            </div>
+                            <h4>Fragrances</h4>
+                            <h3>Sản phẩm được yêu thích nhất 2024</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                                . Doloribus voluptatem nam quibusdam beatae libero corporis hic </p>
+                        </div>
+                        
+                        <div class="sp_blog_1">
+                            <div class="blog_img_2">
+                            </div>
+                            <h4>Fragrances</h4>
+                            <h3>Sản phẩm được yêu thích nhất 2024</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                                . Doloribus voluptatem nam quibusdam beatae libero corporis hic </p>
+                        </div>
+                        
+                        <div class="sp_blog_1">
+                            <div class="blog_img_2">
+                            </div>
+                            <h4>Fragrances</h4>
+                            <h3>Sản phẩm được yêu thích nhất 2024</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                                . Doloribus voluptatem nam quibusdam beatae libero corporis hic </p>
+                        </div>    
+                    </div>
+                    <div class="sp_grid_blog_2">
+                        <div class="sp_blog_1_1">
+                            <div class="sp_blog_1">
+                                <div class="blog_img_1">
+                                </div>
+                                <h4>Fragrances</h4>
+                                <h3>Sản phẩm được yêu thích nhất 2024</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                                . Doloribus voluptatem nam quibusdam beatae libero corporis hic</p>
+                            </div>
+                        </div>
+                        <div class="sp_blog_1">
+                            <div class="blog_img_2">
+                            </div>
+                            <h4>Fragrances</h4>
+                            <h3>Sản phẩm được yêu thích nhất 2024</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                            . Doloribus voluptatem nam quibusdam beatae libero corporis hic</p>
+                        </div>
+                    </div>
+              
+             </div>
+                  <!-- end tin tức -->
     </div>
     <!-- end body -->
        <!-- mess_user -->
       
         <div class="mess_user">
-            <div class="form_fix">
+            <div class="form_fix ">
                 <div class="form_mess">
                     <div class="form_mess_input">
-                        <h2>Hãy Đăng Ký</h2>
+                        <h2>Nhập họ tên và email của bạn</h2>
                         <input type="text" placeholder="Họ và tên">
-                        <input type="text" placeholder="Email">
                         <input type="text" placeholder="Mật khẩu">
                     </div>
-                    <div class="form_mess_login   ">
-                        <h2><button>ĐĂNG NHẬP</button></h2> 
+                    <div class="form_mess_login">
+                        <h2><button>Ghi câu hỏi</button></h2> 
                     </div>
     
                 </div>
             </div>
-            <button class="btn_mess_user">Bạn cần tư vấn gì hãy click vào đây và ghi thông tin</button>
+            <button class="btn_mess_user  " data-wow-delay="10s" >Bạn cần tư vấn gì hãy click vào đây và ghi thông tin</button>
 
-            <div class="bk_mess" style="position: fixed; background-color: brown;
-            height: 50px; width: 60px; bottom: 50px; border-radius: 10px; right: 0; z-index: 11;">     
+            <div class="bk_mess w "data-wow-delay="9.5s" style="position: fixed; background-color: brown;
+            height: 50px; width: 60px; bottom: 50px; border-radius: 10px; right: 10px; z-index: 11;">     
             </div>
 
-            <div class="tamgia" style=" width: 0;position: fixed;bottom: 30px; z-index: 10; right: 0;
+            <div class="tamgia  " data-wow-delay="9.5s" style=" width: 0;position: fixed;bottom: 30px; z-index: 10; right: 10px;
             height: 0;
             border-left: 50px solid transparent; /* Cạnh bên trái */
             border-right: 0px solid transparent; /* Cạnh bên phải */
@@ -1217,147 +1447,102 @@
             </div>
        </div>
    <!-- mess_user -->
+  
+    <!-- footer -->
+     <div class="footer">
+            <div class="container">
+                <!-- footer_bck -->
+                <div class="footer_bck">
+                    <!-- ft_grid -->
+                    <div class="ft_grid">
+                        <div class="ft_1">
+                           <h3>SHOP ĐỒNG HỒ NHL UY TÍN CHẤT LƯỢNG</h3>
+                           <p>Chinh nhánh chính: 175/6 Đông Thịnh 8, Phường Mỹ Phước, thành phố Long Xuyên, An Giang</p>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8777102141466!2d106.6314696740166!3d10.743907259794778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e794ceeb2e7%3A0x60feca181d4f1dd3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBL4bu5IHRodeG6rXQgVHAuSENN!5e0!3m2!1svi!2s!4v1734846413271!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-        <!-- Footer -->
-        <!-- <footer> -->
-            <!-- end icon -->
-            <!-- tablet-pc -->
-            <!-- <div class="footer" style="
-            background-color: rgb(59 59 59);">
-                <div class="container" style="display: flex; padding-top: 40px;">
-                    <div class="ft_1">
-                        <div class="tongdai">
-                            <span style="padding: 10px 40px; border: 2px dashed white; font-size: 40px; width: auto;">1900.6067</span>
                         </div>
-                        <div class="ft_1_1" style="margin-top: 60px;">
-                            <span style="color: white; font-size:30px;"> <span style="color: red;">NHL</span> SHOP</span> <br>
-                            <span>Địa Chỉ:</span> <br>
-                            <span>215. Nguyễn Văn Luông, Phường 11, Quận 6, Tp. Hồ Chí Minh</span> <br>
-                            <span>Số điện thoại: 0123245535</span> <br>
+                        <div class="ft_2">
+                            <h3>HỆ THỐNG CỬA HÀNG</h3>
+                            <p>TP.Hồ Chí Minh</p>
+                            <p>Hà Nội</p>
+                            <p>Hải Phòng</p>
+                            <p>Đà Nẵng</p>
+                            <p>Vũng Tàu</p>
+                            <p>Biên Hòa - Bình Dương</p>
+                        </div>
+                        <div class="ft_3">
+                           <h3>THÔNG TIN</h3>
+                           <p>Thông tin liên hệ</p>
+                           <p>Thanh toán - trả góp</p>
+                           <p>Liên hệ đối tác doanh nghiệp</p>
+                           <p>Vận chuyển và giao nhận</p>
+                        </div>
+                        <div class="ft_4">
+                           <div class="form_ft">
+                                <h3> ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h3>
+                                <div class="fr ft_1_1">
+                                    <input type="text" placeholder="Họ tên">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="fr ft_2_2">
+                                  <input type="text" placeholder="Số điện thoại">
+                                </div>
+                                <div class="fr ft_3_3">
+                                  <input type="text" placeholder="ghi chú">
+                                </div>
+                           </div>
+                        </div>
+                   </div>
+                    <!-- end ft_grid -->
+                    <div class=" hide_ft_4_deskop">
+                        <div class="form_ft">
+                             <h3> ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h3>
+                             <div class="fr ft_1_1">
+                                 <input type="text" placeholder="Họ tên">
+                                 <input type="text" placeholder="Email">
+                             </div>
+                             <div class="fr ft_2_2">
+                               <input type="text" placeholder="Số điện thoại">
+                             </div>
+                             <div class="fr ft_3_3">
+                               <input type="text" placeholder="ghi chú">
+                             </div>
                         </div>
                     </div>
-    
-                    <div class="ft_2">
-                        <p style="font-size:17px">HỆ THỐNG CỬA HÀNG </p>
-                        <div class="ft_2_1">
-                            <ul>
-                                <li>Tp. Hồ Chí Minh </li>
-                                <li>Hà Nội </li>
-                                <li>Hải Phòng </li>
-                                <li>Biên Hòa - Đồng Nai </li>
-                                <li>Đà Nẵng </li>
-                                <li>Vũng Tàu</li>
-                                <li>Cần Thơ </li>
-                                <li>Long Xuyên </li>
-                            </ul>
-                            <ul style="margin-left: 20px;">
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                                <li><span>></span> </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="ft_3">
-                        <p style="font-size:17px">THÔNG TIN</p>
-                        <ul>
-                            <li>Thông tin liên hệ</li>
-                            <li> Thanh toán - Trả góp</li>
-                            <li>Liên hệ đối tác doanh nghiệp</li>
-                            <li> Vận chuyển & Giao nhận</li>
-                        </ul>
-                        <p style="font-size:17px">THAM KHẢO</p>
-                        <ul>
-                            <li>Điều khoản sử dụng</li>
-                            <li>Bảo mật thông tin</li>
-                            <li>Tra cứu đồng hồ bảo hành</li>
-                        </ul>
-                    </div>
-    
-                    <div class="ft_5">
-                        <p style="font-size:17px">LIÊN HỆ HỖ TRỢ</p>
-                        <ul>
-                            <li>Hotline 1: 0924012396</li>
-                            <li>Hotline 2: 0920124632</li>
-                            <li>Hotline 3: 0903256931</li>
-                            <li>Email: DHShop@gmail.com</li>
-                        </ul>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8777102141967!2d106.63146967592769!3d10.743907259790937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e794ceeb2e7%3A0x60feca181d4f1dd3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBL4bu5IHRodeG6rXQgVHAuSENN!5e0!3m2!1svi!2s!4v1727765060060!5m2!1svi!2s"
-                            width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-    
                 </div>
-            </div>
-    
-        </footer> -->
-        <!-- End Footer -->
-    <!-- footer reponsive -->
-    <!-- <div class="footer_2"><br>
-        <div class="tongdai">
-            <span style="font-size: 30px;width: auto;border: 2px dashed white; padding: 10px;">1900.6067</span>
-        </div><br><br>
-        <div class="hethongshop">
-            <div class="cuahang">HỆ THỐNG CỬA HÀNG </div>
-            <div class="icon_arrow_1"></i><i class="fa fa-angle-right" style="font-size:36px"></i></div>
-            <div class="icon_arrow_2"><i class="fa fa-angle-down" style="font-size:36px"></i></div>
-        </div>
-        <div class="list_hethongshop">
-            <ul>
-                <li>Tp. Hồ Chí Minh </li>
-                <li>Hà Nội </li>
-                <li>Hải Phòng </li>
-                <li>Biên Hòa - Đồng Nai </li>
-                <li>Đà Nẵng </li>
-                <li>Vũng Tàu</li>
-                <li>Cần Thơ </li>
-                <li>Long Xuyên </li>
-            </ul>
-        </div>
-        <div class="thongtinshop">
-            <div class="thongtin">THÔNG TIN </div>
-            <div class="icon_arrow_3"></i><i class="fa fa-angle-right" style="font-size:36px"></i></div>
-            <div class="icon_arrow_4"><i class="fa fa-angle-down" style="font-size:36px"></i></div>
-        </div>
-        <div class="list_thongtinshop">
-            <ul>
-                <li>Thông tin liên hệ</li>
-                <li> Thanh toán - Trả góp</li>
-                <li>Liên hệ đối tác doanh nghiệp</li>
-                <li> Vận chuyển & Giao nhận</li>
-                <li>Điều khoản sử dụng</li>
-                <li>Bảo mật thông tin</li>
-                <li>Tra cứu đồng hồ bảo hành</li>
-            </ul>
-        </div>
-        <div class="lienheshop">
-            <div class="lienhe">LIÊN HỆ  </div>
-            <div class="icon_arrow_5"></i><i class="fa fa-angle-right" style="font-size:36px"></i></div>
-            <div class="icon_arrow_6"><i class="fa fa-angle-down" style="font-size:36px"></i></div>
-        </div>
-        <div class="list_lienheshop">
-            <ul>
-                <li>Hotline 1: 0924012396</li>
-                <li>Hotline 2: 0920124632</li>
-                <li>Hotline 3: 0903256931</li>
-                <li>Email: DHShop@gmail.com</li>
-            </ul>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8777102141967!2d106.63146967592769!3d10.743907259790937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e794ceeb2e7%3A0x60feca181d4f1dd3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBL4bu5IHRodeG6rXQgVHAuSENN!5e0!3m2!1svi!2s!4v1727765060060!5m2!1svi!2s"
-                width="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="info_shop">
-            <span style="color: white; font-size:30px;"> <span style="color: red;">NHL</span> SHOP</span> <br>
-            <span>Địa Chỉ: 215. Nguyễn Văn Luông, Phường 11, Quận 6, Tp. Hồ Chí Minh</span><br>
-            <span>Số điện thoại: 0123245535</span> <br>
-        </div>
-    </div> -->
-    <!-- End Footer reponsive -->
-    
-</body>
+                <!-- footer bck -->
+                 <!-- footer_mb -->
+                  <div class="footer_mb">
+                      <div class="ft_mb_grid">
+                           <h3>SHOP ĐỒNG HỒ UY TÍN</h3>
+                           <i class="fa fa-angle-down" style="font-size:24px"></i>
 
+                      </div> 
+                      <div class="ft_mb_grid">
+                           <h3>HỆ THỐNG CỬA HÀNG</h3>
+                           <i class="fa fa-angle-down" style="font-size:24px"></i>
+                      </div> 
+                      <div class="ft_mb_grid">
+                           <h3>THÔNG TIN</h3>
+                           <i class="fa fa-angle-down" style="font-size:24px"></i>
+                      </div> 
+                      <div class="ft_mb_grid">
+                           <h3>TƯ VẤN MIỄN PHÍ</h3>
+                           <i class="fa fa-angle-down" style="font-size:24px"></i>
+                      </div> 
+                  </div>
+                 <!-- footer_mb -->
+            
+            </div>
+            <div class="ft_end">
+                <p>from to: NHL SHOP. Email: Dhai9069@gmail.com</p>
+            </div>
+     </div>
+     <!-- end footer -->
+
+   
+      
+</body>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script src='https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.min.js'></script><script  src="./script.js"></script>

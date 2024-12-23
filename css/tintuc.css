@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 /* header */
-
-body {
+body{
     padding: 0px 10px;
 }
 
+
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -53,7 +53,36 @@ body {
     align-items: center;
 }
 
-
+.menu_push{
+    position: fixed;
+    width: 300px;
+    background-color: white;
+    opacity: 1;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: -400px;
+    transition: left 0.5s ease; 
+    z-index: 100;
+}
+.active_menu{
+    left: 0px;
+    transition: 0.5s;
+}
+.active_menu_2{
+    left: -400px;
+    transition: 0.5s;
+}
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 99; 
+    display: none; 
+}
 /* end search mobile */
 
 .header-logo .container .logo {
@@ -97,6 +126,7 @@ body {
 
 
 /* menu */
+
 
 .desktop-menu {
     display: flex;
@@ -153,11 +183,24 @@ i.fa.fa-bars {
 .desktop-menu li:hover a::after {
     width: 100%; 
 }
+.slide_toggle_ut_1,
+.slide_toggle_ut_2,
+.slide_toggle_ut_3,
+.slide_toggle_ut_4,
+.slide_toggle_ut_5{
+    position: relative;
+}
+/* Style cho menu */
+
+/* Style cho dropdown */
+
+  
 
 /* menu */
 
 
 /* end header */
+
 
 /* body */
 
@@ -233,84 +276,9 @@ i.fa.fa-bars {
 /* san pham chinh */
 
 
-/* bcksp */
-
-.bcksp {
-    margin-bottom: 20px;
-    padding: 5px;
-    border-radius: 5Px;
-    background-color: #b07642;
-    width: 40%;
-    font-size: 10px;
-    transform: translateX(-50%);
-    margin-left: 50%;
-}
-
-.bcksp h1 {
-    text-align: center;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.xemthem {
-    margin: auto;
-    padding: 10px;
-    width: 150px;
-    border-radius: 5px;
-    margin-top: 20px;
-    background-color: #b07642;
-}
-
-.xemthem p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 19px;
-    margin-bottom: 0;
-}
-
-
-/* endbcksp */
 
 
 /* bcksp_2 */
-
-.bcksp_2 {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bcksp_2 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.bcksp_2 .xemthem {
-    margin: auto;
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid white;
-    margin-top: 20px;
-}
-
-.bcksp_2 .xemthem p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-}
 
 
 /* endbcksp_2 */
@@ -417,7 +385,45 @@ i.fa.fa-bars {
 
 
 
+/* body */
+.blog_img{
+    display: grid !important;
+    grid-template-columns:67% 33%;
+    margin-top: 30px;
+    align-items: center;
+}
+.blog_img img{
+    width: 100%;
+    padding-right: 20px;
+}
+.img_grid_2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 20px;
+    justify-content: space-between;
 
+}
+.img_grid_2 img{
+    width: 100%;
+}
+.img_grid_2 .img_txt h4{
+    font-weight: 600;
+}
+.img_grid_2 .img_txt button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    margin-top: 5px;
+}
+.body hr{
+    height: 2px;
+    background: lightgray;
+}
+
+
+
+/* end body */
 /* tin tức */
 
 .flex-tintuc {
@@ -850,6 +856,27 @@ i.fa.fa-bars {
         padding: 10px;
         line-height: 40px;
       }
+      /* tintuc */
+      .blog_img{
+
+        grid-template-columns:100% ;
+    }
+      .blog_img img{
+
+        padding-right: 0px;
+    }
+    .img_grid_2{
+        grid-template-columns: 49% 49% ;
+       
+    }
+    .img_grid_2 .img_txt{
+        padding: 0px !important;
+       
+    }
+    .img_txt_end{
+        display: none;
+    }
+      /* tintuc */
     
 
 }
@@ -1039,6 +1066,29 @@ i.fa.fa-bars {
         padding: 10px;
         line-height: 40px;
       }
+      /* tin tức */
+        /* tintuc */
+        .blog_img{
+            grid-template-columns:100% ;
+        }
+          .blog_img img{
+    
+            padding-right: 0px;
+        }
+        .img_grid_2{
+            grid-template-columns: 100% ;
+           
+        }
+        .img_grid_2 .img_txt{
+            padding: 0px !important;
+            margin-bottom: 10px;
+           
+        }
+        .img_txt_end{
+            display: none;
+        }
+          /* tintuc */
+      /* tin tức */
     }
     
 
