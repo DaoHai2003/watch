@@ -21,3 +21,15 @@ $(document).ready(function () {
     });
     
 });
+// menu_push
+$(document).ready(function () {
+    $(".menu-icon").click(function () {
+        $(".menu_push").toggleClass("active_menu");
+        $(".menu_overlay").fadeToggle(); 
+    });
+  
+    $(".main, .menu_overlay").click(function () {
+        $(".menu_push").removeClass("active_menu");
+        $(".menu_overlay").fadeOut(); 
+    });
+  });

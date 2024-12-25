@@ -292,7 +292,7 @@ i.fa.fa-bars {
    display: flex;
    justify-content: space-between;
    font-size: 18px;
-   margin-top: 10px;
+   margin-top: 20px;
 
 }
 .ck_box{
@@ -348,7 +348,12 @@ i.fa.fa-bars {
     margin-top: 20px;
     font-size: 17px;
 }
-
+.error-message{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
 /* form đăng nhập */
 /************************** body ***********************/
 
@@ -1014,24 +1019,7 @@ i.fa.fa-bars {
    margin-bottom: 5px;
    
 }
-     /* footer */
-     .footer_bck{
-        display: none;
-    }
-    .footer_mb{
-        color: white;
-        line-height: 40px;
-        padding: 20px;
-    }
-    .ft_mb_grid{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer_mb h3{
-        font-size: 17px;
-    }
-     /* footer */
+     
 /************************** end body *********************/
 
 /************* reponsive *****************/
@@ -1301,6 +1289,27 @@ i.fa.fa-bars {
     .Featured_grid_nu{
         margin-top: 20px;
     }
+     /* Footer */
+     .footer_bck{
+        display: none;
+    }
+    .footer_mb{
+        color: white;
+        line-height: 50px !important; 
+        padding: 20px;
+    }
+    .ft_mb_grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_mb h3{
+        font-size: 17px;
+    }
+
+     
+    
+     /* footer */
     }
     
 
